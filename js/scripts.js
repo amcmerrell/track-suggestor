@@ -7,7 +7,7 @@ $(document).ready(function() {
     var buildInput = parseInt($("input:radio[name=buildType]:checked").val());
     var result = devInput + bizInput + osInput + buildInput;
 
-    $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
+
 
     if (nameInput === "") {
       $(".error").show();
@@ -17,6 +17,7 @@ $(document).ready(function() {
       $("#java").hide();
       $("#csharp").hide();
     } else if (result >= 4 && result < 10) {
+      $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
       $("#css").show();
       $("#ruby").show();
       $("#php").show();
@@ -24,6 +25,7 @@ $(document).ready(function() {
       $("#csharp").hide();
       $(".error").hide();
     } else if (result >= 10 && result < 15) {
+      $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
       $("#ruby").show();
       $("#php").show();
       $("#java").show();
@@ -31,6 +33,7 @@ $(document).ready(function() {
       $("#csharp").hide();
       $(".error").hide();
     } else {
+      $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
       $("#csharp").show();
       $("#php").show();
       $("#java").show();
