@@ -18,7 +18,7 @@
           <label for="name">1. Please enter your name below.</label>
           <input id="name" class="form-control" type="text">
         </div>
-        <label for="devType">2. Do you think you would like to focus more on front-end development (i.e. how things will look) or back-end development (i.e. how things work behind the scenes)?</label>
+        <label for="devType">2. Would like to focus more on front-end development (i.e. how things will look) or back-end development (i.e. how things work behind the scenes)?</label>
         <div class="radio">
           <label class="radio-inline">
             <input type="radio" name="devType" value="frontend">
@@ -29,6 +29,28 @@
             Back-end development
           </label>
         </div>
+        <label for="bizSize">3. What size company would you like to work for?</label>
+        <div class="radio">
+          <label class="radio-inline">
+            <input type="radio" name="bizSize" value="small">
+            Small
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="bizSize" value="medium">
+            Medium
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="bizSize" value="large">
+            Large
+          </label>
+        </div>
+        <label for="osPref">4. Do you have any preference between the operating systems listed below?</label>
+        <select class="form-control" id="osPref">
+            <option value="windows">Prefer working with Windows over other operating systems.</option>
+            <option value="android">Prefer working with Android over other operating systems.</option>
+            <option value="neither">Prefer not working with either Windows or Android.</option>
+            <option value="any">No preference.</option>
+        </select>
         <button type="submit" class="btn btn-primary">View your recommendation!</button>
       </form>
       <!-- End form content -->
