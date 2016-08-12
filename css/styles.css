@@ -27,14 +27,20 @@ button {
 
 #recommendation {
   margin-top: 2em;
+  padding-bottom: 1em;
   font-weight: bold;
   font-size; 18px;
+  border-bottom: 2px grey dashed;
 }
 
 .col-md-8 {
   margin-top: 1em;
   padding-bottom: 1em;
   border-bottom: 2px grey dashed;
+}
+
+div#recommendation {
+  margin-top: 0em;
 }
 
 .col-md-3 {

@@ -7,45 +7,43 @@ $(document).ready(function() {
     var buildInput = parseInt($("input:radio[name=buildType]:checked").val());
     var result = devInput + bizInput + osInput + buildInput;
 
-
-
     if (nameInput === "") {
-      $(".error").show();
+      $(".error").fadeIn();
       $("#css").hide();
       $("#ruby").hide();
       $("#php").hide();
       $("#java").hide();
       $("#csharp").hide();
     } else if (result >= 4 && result < 10) {
+      $("form").hide();
       $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
-      $("#css").show();
-      $("#ruby").show();
-      $("#php").show();
+      $("#css").fadeIn(2000);
+      $("#ruby").fadeIn(4000);
+      $("#php").fadeIn(6000);
       $("#java").hide();
       $("#csharp").hide();
       $(".error").hide();
     } else if (result >= 10 && result < 15) {
       $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
-      $("#ruby").show();
-      $("#php").show();
-      $("#java").show();
+      $("#ruby").fadeIn(2000);
+      $("#php").fadeIn(4000);
+      $("#java").fadeIn(6000);
       $("#css").hide();
       $("#csharp").hide();
       $(".error").hide();
     } else {
       $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
-      $("#csharp").show();
-      $("#php").show();
-      $("#java").show();
+      $("#csharp").fadeIn(2000);
+      $("#php").fadeIn(4000);
+      $("#java").fadeIn(6000);
       $("#css").hide();
       $("#ruby").hide();
       $(".error").hide();
     };
-
     event.preventDefault();
   });
 });
-
+    //Below is initial branching logic that did not work.
     // if (devInput === "frontend") {
     //   $("#css").show();
     //   $("#java").show();
