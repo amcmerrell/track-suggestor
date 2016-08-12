@@ -25,6 +25,11 @@ button {
   margin-top: 1em;
 }
 
+.info {
+  background-color: #00b3b4;
+  color: white;
+}
+
 #recommendation {
   margin-top: 2em;
   padding-bottom: 1em;
@@ -33,7 +38,7 @@ button {
   border-bottom: 2px grey dashed;
 }
 
-.col-md-8 {
+.col-md-9 {
   margin-top: 1em;
   padding-bottom: 1em;
   border-bottom: 2px grey dashed;
