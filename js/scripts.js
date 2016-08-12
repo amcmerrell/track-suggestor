@@ -3,11 +3,11 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var devInput = $("input:radio[name=devType]:checked").val();
 
-    $(".recommendation").text(nameInput + ", here are our course recommendations for you!");
+    // $(".recommendation").text(nameInput + ", here are our course recommendations for you!");
 
-    // if (devInput === "frontend") {
-    //
-    // };
+    if (devInput === "frontend") {
+      $("#css").show();
+    }
 
     event.preventDefault();
   });
