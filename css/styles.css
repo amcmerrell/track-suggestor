@@ -1,3 +1,36 @@
+body {
+  background: #cccccc;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #00b3b4;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #00b3b4;
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 1em;
+}
+
+#recommendation {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size; 18px;
+}
+
+.col-md-8 {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px grey dashed;
+}
+
+/* CSS to hide results section on page load */
 #css {
   display: none;
 }
@@ -16,10 +49,4 @@
 
 #csharp {
   display: none;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color: #00b3b4;
-  text-decoration: underline;
 }
