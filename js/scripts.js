@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
-    var nameInput = parseInt($("input#name").val());
+    var nameInput = $("input#name").val();
     var devInput = parseInt($("input:radio[name=devType]:checked").val());
     var bizInput = parseInt($("input:radio[name=bizSize]:checked").val());
     var osInput = parseInt($("#osPref").val());
     var buildInput = parseInt($("input:radio[name=buildType]:checked").val());
     var result = devInput + bizInput + osInput + buildInput;
 
-    // $(".recommendation").text(nameInput + ", here are our course recommendations for you!");
+    $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
 
     if (result >= 4 && result < 10) {
       $("#css").show();
