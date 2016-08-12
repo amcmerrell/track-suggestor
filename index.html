@@ -14,11 +14,13 @@
       <h1>Epicodus Track Suggestor</h1>
       <!-- Begin form content -->
       <form>
+        <!-- Question 1 -->
         <div class="form-group">
           <label for="name">1. Please enter your name below.</label>
           <input id="name" class="form-control" type="text">
         </div>
-        <label for="devType">2. Would like to focus more on front-end development (i.e. how things will look) or back-end development (i.e. how things work behind the scenes)?</label>
+        <!-- Question 2 -->
+        <label for="devType">2. Would you like to focus more on front-end development (i.e. how things will look) or back-end development (i.e. how things work behind the scenes)?</label>
         <div class="radio">
           <label class="radio-inline">
             <input type="radio" name="devType" value="frontend">
@@ -29,6 +31,7 @@
             Back-end development
           </label>
         </div>
+        <!-- Question 3 -->
         <label for="bizSize">3. What size company would you like to work for?</label>
         <div class="radio">
           <label class="radio-inline">
@@ -44,6 +47,7 @@
             Large
           </label>
         </div>
+        <!-- Question 4 -->
         <label for="osPref">4. Do you have any preference between the operating systems listed below?</label>
         <select class="form-control" id="osPref">
             <option value="windows">Prefer working with Windows over other operating systems.</option>
@@ -51,6 +55,26 @@
             <option value="neither">Prefer not working with either Windows or Android.</option>
             <option value="any">No preference.</option>
         </select>
+        <!-- Question 5 -->
+        <label for="buildType">5. What would you like to focus on building after completing your track?</label>
+        <div class="radio">
+          <label class="radio-inline">
+            <input type="radio" name="buildType" value="web">
+            Websites
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="buildType" value="cms">
+            Content Managment Systems
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="buildType" value="webapps">
+            Web Applications
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="buildType" value="mobapps">
+            Mobile Applications
+          </label>
+        </div>
         <button type="submit" class="btn btn-primary">View your recommendation!</button>
       </form>
       <!-- End form content -->
