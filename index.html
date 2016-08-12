@@ -23,11 +23,11 @@
         <label for="devType">2. Would you like to focus more on front-end development (i.e. how things will look) or back-end development (i.e. how things work behind the scenes)?</label>
         <div class="radio">
           <label class="radio-inline">
-            <input type="radio" name="devType" value="frontend">
+            <input type="radio" name="devType" value="1">
             Front-end development
           </label>
           <label class="radio-inline">
-            <input type="radio" name="devType" value="backend">
+            <input type="radio" name="devType" value="5">
             Back-end development
           </label>
         </div>
@@ -35,44 +35,48 @@
         <label for="bizSize">3. What size company would you like to work for?</label>
         <div class="radio">
           <label class="radio-inline">
-            <input type="radio" name="bizSize" value="small">
+            <input type="radio" name="bizSize" value="1">
             Small
           </label>
           <label class="radio-inline">
-            <input type="radio" name="bizSize" value="medium">
+            <input type="radio" name="bizSize" value="3">
             Medium
           </label>
           <label class="radio-inline">
-            <input type="radio" name="bizSize" value="large">
+            <input type="radio" name="bizSize" value="5">
             Large
           </label>
         </div>
         <!-- Question 4 -->
         <label for="osPref">4. Do you have any preference between the operating systems listed below?</label>
         <select class="form-control" id="osPref">
-            <option value="windows">Prefer working with Windows over other operating systems.</option>
-            <option value="android">Prefer working with Android over other operating systems.</option>
-            <option value="neither">Prefer not working with either Windows or Android.</option>
-            <option value="any">No preference.</option>
+            <option value="5">Prefer working with Windows over other operating systems.</option>
+            <option value="4">Prefer working with Android over other operating systems.</option>
+            <option value="1">Prefer not working with either Windows or Android.</option>
+            <option value="3">No preference.</option>
         </select>
         <!-- Question 5 -->
         <label for="buildType">5. What would you like to focus on building after completing your track?</label>
         <div class="radio">
           <label class="radio-inline">
-            <input type="radio" name="buildType" value="web">
+            <input type="radio" name="buildType" value="1">
             Websites
           </label>
           <label class="radio-inline">
-            <input type="radio" name="buildType" value="cms">
+            <input type="radio" name="buildType" value="3">
             Content Managment Systems
           </label>
           <label class="radio-inline">
-            <input type="radio" name="buildType" value="webapps">
+            <input type="radio" name="buildType" value="2">
             Web Applications
           </label>
           <label class="radio-inline">
-            <input type="radio" name="buildType" value="mobapps">
+            <input type="radio" name="buildType" value="4">
             Mobile Applications
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="buildType" value="5">
+            Software
           </label>
         </div>
         <button type="submit" class="btn btn-primary">View your recommendation!</button>
