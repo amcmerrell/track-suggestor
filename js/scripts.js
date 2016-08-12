@@ -9,24 +9,34 @@ $(document).ready(function() {
 
     $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
 
-    if (result >= 4 && result < 10) {
+    if (nameInput === "") {
+      $(".error").show();
+      $("#css").hide();
+      $("#ruby").hide();
+      $("#php").hide();
+      $("#java").hide();
+      $("#csharp").hide();
+    } else if (result >= 4 && result < 10) {
       $("#css").show();
       $("#ruby").show();
       $("#php").show();
       $("#java").hide();
       $("#csharp").hide();
+      $(".error").hide();
     } else if (result >= 10 && result < 15) {
       $("#ruby").show();
       $("#php").show();
       $("#java").show();
       $("#css").hide();
       $("#csharp").hide();
+      $(".error").hide();
     } else {
       $("#csharp").show();
       $("#php").show();
       $("#java").show();
       $("#css").hide();
       $("#ruby").hide();
+      $(".error").hide();
     };
 
     event.preventDefault();
