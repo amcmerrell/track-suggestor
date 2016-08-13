@@ -24,6 +24,7 @@ $(document).ready(function() {
       $("#csharp").hide();
       $(".error").hide();
     } else if (result >= 10 && result < 15) {
+      $("form").hide();
       $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
       $("#ruby").fadeIn(2000);
       $("#php").fadeIn(4000);
@@ -32,10 +33,11 @@ $(document).ready(function() {
       $("#csharp").hide();
       $(".error").hide();
     } else {
+      $("form").hide();
       $("#recommendation").text(nameInput + ", here are our course recommendations for you!");
-      $("#csharp").fadeIn(2000);
-      $("#php").fadeIn(4000);
-      $("#java").fadeIn(6000);
+      $("#php").fadeIn(2000);
+      $("#java").fadeIn(4000);
+      $("#csharp").fadeIn(6000);
       $("#css").hide();
       $("#ruby").hide();
       $(".error").hide();
